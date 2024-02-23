@@ -23,10 +23,11 @@ get_pb_dyn_inventory.sh
 ```
 Both the above files need to be copied to /usr/local/bin on your Ansible controller.
 
-Run the Example Playbook
+# Run the Example Playbook
 
 1. Download the file print_facts.yml and copy to your Ansible controller.
 
 2. Run the playbook - either pass in a hostname or if you have setup Host Groups in CheckMK you can pass in a host group:
-
+```
 /usr/bin/ansible-playbook -i /usr/local/bin/get_pb_dyn_inventory.sh -e target=LMST print_facts.yml
+```
